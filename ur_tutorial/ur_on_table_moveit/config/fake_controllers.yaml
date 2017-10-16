@@ -1,0 +1,26 @@
+controller_list:
+  - name: fake_Arm_controller
+    joints:
+      - ur_arm_0_joint
+      - ur_arm_1_joint
+      - ur_arm_2_joint
+      - ur_arm_3_joint
+      - ur_arm_4_joint
+      - ur_arm_5_joint
+  - name: fake_Hand_controller
+    joints:
+      - ur_arm_5_joint
+      - ur_finger_joint_0
+      - ur_finger_joint_2
+      - ur_finger_joint_4
+  - name: fake_All_controller
+    joints:
+      - ur_arm_0_joint
+      - ur_arm_1_joint
+      - ur_arm_2_joint
+      - ur_arm_3_joint
+      - ur_arm_4_joint
+      - ur_arm_5_joint
+      - ur_finger_joint_0
+      - ur_finger_joint_2
+      - ur_finger_joint_4

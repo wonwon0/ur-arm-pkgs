@@ -1,0 +1,6 @@
+<launch>
+    <include file="$(find ur_moveit)/launch/ur_rviz.launch">
+        <arg name="moveit_package_path" value="$(find ur_on_table_moveit)"/>
+    </include>
+</launch>
+

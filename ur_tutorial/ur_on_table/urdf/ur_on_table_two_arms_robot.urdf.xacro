@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot name="UrOnTable" xmlns:xacro="http://ros.org/wiki/xacro">
+<!--
+	<link name="ur_on_table_root">
+		<static>false</static>
+	</link>
+-->
+	<link name="world"/>
+	<xacro:include filename="$(find ur_on_table)/urdf/ur_on_table_two_arms.urdf.xacro" />
+    <xacro:ur_on_table parent="world">
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </xacro:ur_on_table>
+</robot>
+
