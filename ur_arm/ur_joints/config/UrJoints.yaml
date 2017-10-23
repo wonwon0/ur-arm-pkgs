@@ -37,12 +37,12 @@ ur:
 
     # Maximum forces for arm
     arm_joint_max_force:
-        - 8 
-        - 8
-        - 4
-        - 2
-        - 2
-        - 2
+        - 800
+        - 800
+        - 400
+        - 200
+        - 200
+        - 200
 
 
     # All links which are in-between (and directly before and after)
@@ -77,18 +77,18 @@ ur:
         - 0
         - 0
         - 0
-    # -0.0043633
+        - 0.0043633
 
     # Maximum velocities for gripper
     gripper_joint_max_vel:
-        - 0.3 
-        - 0.3 
-        - 0.3 
+        - 0.3
+        - 0.3
+        - 0.3
 
     # Maximum forces for gripper
     gripper_joint_max_force:
         - 2
-        - 2 
+        - 2
         - 2
 
 

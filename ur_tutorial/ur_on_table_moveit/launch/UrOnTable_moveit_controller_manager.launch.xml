@@ -1,4 +1,0 @@
-<launch>
-    <include file="$(find ur_moveit)/launch/ur_moveit_simple_controller_manager.launch"/>
-    <!--include file="$(find ur_moveit)/launch/ur_moveit_multidof_controller_manager.launch"/-->
-</launch>

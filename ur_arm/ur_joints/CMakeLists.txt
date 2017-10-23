@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(jaco_joints)
+project(ur_joints)
 
 find_package(catkin REQUIRED COMPONENTS
   roscpp
@@ -24,7 +24,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
   INCLUDE_DIRS include
-  LIBRARIES jaco_joints jaco_trajectory_action_server
+  LIBRARIES ur_joints ur_trajectory_action_server
   CATKIN_DEPENDS arm_components_name_manager joint_trajectory_execution 
 )
 
@@ -39,21 +39,21 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-add_library(jaco_joints
-  src/JacoJointManager.cpp
+add_library(ur_joints
+  src/UrJointManager.cpp
 )
 
-add_library(jaco_trajectory_action_server
-  src/JacoJointManager.cpp
+add_library(ur_trajectory_action_server
+  src/UrJointManager.cpp
 )
 
-add_dependencies(jaco_joints ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(jaco_trajectory_action_server ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(ur_joints ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(ur_trajectory_action_server ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
-target_link_libraries(jaco_joints
+target_link_libraries(ur_joints
   ${catkin_LIBRARIES}
 )
-target_link_libraries(jaco_trajectory_action_server
+target_link_libraries(ur_trajectory_action_server
   ${catkin_LIBRARIES}
 )
 
@@ -65,7 +65,7 @@ target_link_libraries(jaco_trajectory_action_server
 # See http://ros.org/doc/api/catkin/html/adv_user_guide/variables.html
 
 ## Mark executables and/or libraries for installation
-install(TARGETS jaco_joints jaco_trajectory_action_server 
+install(TARGETS ur_joints ur_trajectory_action_server 
   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
@@ -92,7 +92,7 @@ install(DIRECTORY config
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_jaco_joints.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_ur_joints.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()

@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package>
-  <name>jaco_joints</name>
+  <name>ur_joints</name>
   <version>0.0.0</version>
-  <description>The jaco_joints package</description>
+  <description>The ur_joints package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag --> 
   <maintainer email="jennifer.e.buehler@gmail.com">Jennifer Buehler</maintainer>
@@ -15,7 +15,7 @@
   <!-- Url tags are optional, but mutiple are allowed, one per tag -->
   <!-- Optional attribute type can be: website, bugtracker, or repository -->
   <!-- Example: -->
-  <!-- <url type="website">http://wiki.ros.org/jaco_joints</url> -->
+  <!-- <url type="website">http://wiki.ros.org/ur_joints</url> -->
 
   <!-- Author tags are optional, mutiple are allowed, one per tag -->
   <!-- Authors do not have to be maintianers, but could be -->

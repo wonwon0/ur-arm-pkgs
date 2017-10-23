@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package>
-  <name>jaco_on_table</name>
+  <name>ur_on_table</name>
   <version>0.0.0</version>
-  <description>URDF model for the jaco arm on a table</description>
+  <description>URDF model for the ur arm on a table</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag --> 
   <maintainer email="jennifer.e.buehler@gmail.com">Jennifer Buehler</maintainer>
@@ -15,7 +15,7 @@
   <!-- Url tags are optional, but mutiple are allowed, one per tag -->
   <!-- Optional attribute type can be: website, bugtracker, or repository -->
   <!-- Example: -->
-  <!-- <url type="website">http://wiki.ros.org/jaco_on_table</url> -->
+  <!-- <url type="website">http://wiki.ros.org/ur_on_table</url> -->
 
   <!-- Author tags are optional, mutiple are allowed, one per tag -->
   <!-- Authors do not have to be maintianers, but could be -->
@@ -24,16 +24,16 @@
   <!-- The *_depend tags are used to specify dependencies -->
   <!-- Dependencies can be catkin packages or system dependencies -->
   <buildtool_depend>catkin</buildtool_depend>
-  <build_depend>jaco_description</build_depend>
-  <run_depend>jaco_description</run_depend>
+  <build_depend>ur_description</build_depend>
+  <run_depend>ur_description</run_depend>
   <build_depend>xacro</build_depend>
   
   <run_depend>common_sensors</run_depend> 
   
   <run_depend>xacro</run_depend>
-  <run_depend>jaco_description</run_depend>
-  <run_depend>jaco_joints</run_depend>
-  <run_depend>jaco_gazebo</run_depend>
+  <run_depend>ur_description</run_depend>
+  <run_depend>ur_joints</run_depend>
+  <run_depend>ur_gazebo</run_depend>
   <run_depend>gazebo_world_plugin_loader</run_depend>
 
   <!-- The export tag contains other, unspecified, tags -->

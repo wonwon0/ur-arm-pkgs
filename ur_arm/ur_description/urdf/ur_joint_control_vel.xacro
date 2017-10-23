@@ -72,7 +72,6 @@
             <mechanicalReduction>1</mechanicalReduction>
         </actuator>
     </transmission>
-
     <transmission name="${ur_prefix}_finger_joint_0_vel_transmission">
         <type>transmission_interface/SimpleTransmission</type>
         <joint name="${ur_prefix}_finger_joint_0">

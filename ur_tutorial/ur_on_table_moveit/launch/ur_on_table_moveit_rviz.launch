@@ -1,4 +1,0 @@
-<launch>
-    <include file="$(find ur_on_table_moveit)/launch/ur_on_table_moveit.launch"/>
-    <include file="$(find ur_on_table_moveit)/launch/ur_on_table_rviz.launch"/>
-</launch>

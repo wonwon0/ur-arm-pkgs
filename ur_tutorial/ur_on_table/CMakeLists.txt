@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(jaco_on_table)
+project(ur_on_table)
 
 find_package(catkin REQUIRED COMPONENTS
   xacro

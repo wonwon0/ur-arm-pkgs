@@ -39,8 +39,8 @@ RUN apt-get update && apt-get install -y \
 # install git
 RUN apt-get update && apt-get install -y git
 
-COPY jaco_arm /catkin_ws/src/jaco_arm
-COPY jaco_tutorial /catkin_ws/src/jaco_tutorial
+COPY ur_arm /catkin_ws/src/ur_arm
+COPY ur_tutorial /catkin_ws/src/ur_tutorial
 
 # Get the repository convenience-pkgs as well
 RUN bin/bash -c "cd /catkin_ws/src \

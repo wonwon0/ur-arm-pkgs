@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(jaco_gazebo)
+project(ur_gazebo)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   roscpp
-  jaco_joints
+  ur_joints
   gazebo_joint_control
 )
 
@@ -25,7 +25,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #   INCLUDE_DIRS include
    #LIBRARIES 
-   CATKIN_DEPENDS  gazebo_joint_control jaco_joints
+   CATKIN_DEPENDS  gazebo_joint_control ur_joints
    #   DEPENDS Boost
 )
 
@@ -41,36 +41,11 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-add_executable(test_joint_trajectory_client 
-    test/SimpleJointTrajectoryClient.cpp
-)
-add_executable(test_set_joint_state_publisher_vel 
-    test/SetJointStatePublisher.cpp
-)
-add_executable(test_set_joint_state_publisher_pos
-    test/SetJointStatePositionPublisher.cpp
-)
-
-add_dependencies(test_joint_trajectory_client ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(test_set_joint_state_publisher_vel ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(test_set_joint_state_publisher_pos ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-
 set (DEP_LIBS
    ${catkin_LIBRARIES}
    ${Boost_LIBRARIES}   
 )
 
-target_link_libraries(test_joint_trajectory_client 
-    ${DEP_LIBS}   
-)
-
-target_link_libraries(test_set_joint_state_publisher_vel 
-   ${DEP_LIBS}   
-)
-
-target_link_libraries(test_set_joint_state_publisher_pos 
-   ${DEP_LIBS}   
-)
 
 #############
 ## Install ##
@@ -91,7 +66,7 @@ install(DIRECTORY config
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_jaco_gazebo.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_ur_gazebo.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()
