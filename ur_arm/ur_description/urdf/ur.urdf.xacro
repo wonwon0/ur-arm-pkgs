@@ -29,12 +29,12 @@
   </xacro:macro>
 
   <xacro:macro name="arm_0_limits">
-    <limit effort="8" velocity="1.0" />
+    <limit effort="80" velocity="1.0" />
   </xacro:macro>
 
 
   <xacro:macro name="arm_1_limits" params="l u">
-    <limit lower="${l}" upper="${u}" effort="8" velocity="1.0" />
+    <limit lower="${l}" upper="${u}" effort="80" velocity="1.0" />
   </xacro:macro>
 
     <xacro:macro name="arm_2_limits" params="l u">
@@ -42,15 +42,15 @@
   </xacro:macro>
 
   <xacro:macro name="arm_3_limits">
-    <limit effort="1.5" velocity="1.0" />
+    <limit effort="10.5" velocity="1.0" />
   </xacro:macro>
 
   <xacro:macro name="arm_4_limits">
-    <limit effort="1.0" velocity="1.0" />
+    <limit effort="10.0" velocity="1.0" />
   </xacro:macro>
 
     <xacro:macro name="arm_5_limits">
-    <limit effort="1.0" velocity="1.0" />
+    <limit effort="10.0" velocity="1.0" />
   </xacro:macro>
 
   <!--- remark 2014: damping greater than 0.5 lead to model break downs when testing it bit by bit -->
@@ -151,30 +151,6 @@
     <material>Gazebo/White</material>
     <xacro:default_material/>
   </gazebo>
-  <gazebo reference="${ur_prefix}_1_shoulder_limb">
-    <material>Gazebo/FlatBlack</material>
-    <xacro:default_material/>
-  </gazebo>
-  <gazebo reference="${ur_prefix}_2_upperarm_limb">
-    <material>Gazebo/FlatBlack</material>
-    <xacro:default_material/>
-  </gazebo>
-  <gazebo reference="${ur_prefix}_3_forearm_limb">
-    <material>Gazebo/FlatBlack</material>
-    <xacro:default_material/>
-  </gazebo>
-  <gazebo reference="${ur_prefix}_4_upperwrist_limb">
-    <material>Gazebo/FlatBlack</material>
-    <xacro:default_material/>
-  </gazebo>
-  <gazebo reference="${ur_prefix}_5_lowerwrist_limb">
-    <material>Gazebo/FlatBlack</material>
-    <xacro:default_material/>
-  </gazebo>
-  <gazebo reference="${ur_prefix}_6_hand_limb">
-    <material>Gazebo/FlatBlack</material>
-    <xacro:default_material/>
-  </gazebo>
   <gazebo reference="${ur_prefix}_finger_joint_0">
     <provideFeedback value="true"/>
   </gazebo>
@@ -184,7 +160,6 @@
     <gazebo reference="${ur_prefix}_finger_joint_4">
     <provideFeedback value="true"/>
   </gazebo>
-
     <xacro:if value="$(arg add_transmission_pos)">
         <xacro:include filename="$(find ur_description)/urdf/ur_joint_control.xacro"/>
         <xacro:ur_joint_control ur_prefix="${ur_prefix}"/>
@@ -323,14 +298,14 @@
       <child link = "${ur_prefix}_1_shoulder_limb" />
       <origin xyz="0.0 0.0 ${shoulder_height}" rpy="0.0 0.0 0.0" />
       <axis xyz="0 0 1" />
-      <limit lower="${-2.0 * pi}" upper="${2.0 * pi}" effort="150.0" velocity="3.15"/>
+      <limit lower="${-2.0 * pi}" upper="${2.0 * pi}" effort="1500.0" velocity="3.15"/>
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
 
     <link name="${ur_prefix}_1_shoulder_limb">
       <visual>
         <geometry>
-          <mesh filename="package://ur_description/meshes/ur/shoulder.stl" />
+          <mesh filename="package://ur_description/meshes/ur/shoulder.dae" />
         </geometry>
         <material name="LightGrey">
           <color rgba="0.7 0.7 0.7 1.0"/>
@@ -351,14 +326,14 @@
       <child link = "${ur_prefix}_2_upperarm_limb" />
       <origin xyz="0.0 ${shoulder_offset} 0.0" rpy="0.0 ${pi / 2.0} 0.0" />
       <axis xyz="0 1 0" />
-      <limit lower="${-2.0 * pi}" upper="${2.0 * pi}" effort="150.0" velocity="3.15"/>
+      <limit lower="${-2.0 * pi}" upper="${2.0 * pi}" effort="1500.0" velocity="3.15"/>
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
 
     <link name="${ur_prefix}_2_upperarm_limb">
       <visual>
         <geometry>
-          <mesh filename="package://ur_description/meshes/ur/upperarm.stl" />
+          <mesh filename="package://ur_description/meshes/ur/upperarm.dae" />
         </geometry>
         <material name="LightGrey">
           <color rgba="0.7 0.7 0.7 1.0"/>
@@ -386,7 +361,7 @@
     <link name="${ur_prefix}_3_forearm_limb">
       <visual>
         <geometry>
-          <mesh filename="package://ur_description/meshes/ur/forearm.stl" />
+          <mesh filename="package://ur_description/meshes/ur/forearm.dae" />
         </geometry>
         <material name="LightGrey">
           <color rgba="0.7 0.7 0.7 1.0"/>
@@ -396,6 +371,11 @@
         <geometry>
           <mesh filename="package://ur_description/meshes/ur/forearm.stl" />
         </geometry>
+              <surface>
+        <contact>
+          <collide_without_contact>true</collide_without_contact>
+        </contact>
+      </surface>
       </collision>
       <xacro:cylinder_inertial radius="0.06" length="0.5" mass="${forearm_mass}">
         <origin xyz="0.0 0.0 0.25" rpy="0 0 0" />
@@ -407,14 +387,14 @@
       <child link = "${ur_prefix}_4_upperwrist_limb" />
       <origin xyz="0.0 0.0 ${forearm_length}" rpy="0.0 ${pi / 2.0} 0.0" />
       <axis xyz="0 1 0" />
-      <limit lower="${-2.0 * pi}" upper="${2.0 * pi}" effort="28.0" velocity="3.2"/>
+      <limit lower="${-2.0 * pi}" upper="${2.0 * pi}" effort="280.0" velocity="3.2"/>
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
 
     <link name="${ur_prefix}_4_upperwrist_limb">
       <visual>
         <geometry>
-          <mesh filename="package://ur_description/meshes/ur/wrist1.stl" />
+          <mesh filename="package://ur_description/meshes/ur/wrist1.dae" />
         </geometry>
         <material name="LightGrey">
           <color rgba="0.7 0.7 0.7 1.0"/>
@@ -424,6 +404,11 @@
         <geometry>
           <mesh filename="package://ur_description/meshes/ur/wrist1.stl" />
         </geometry>
+              <surface>
+        <contact>
+          <collide_without_contact>true</collide_without_contact>
+        </contact>
+      </surface>
       </collision>
       <xacro:cylinder_inertial radius="0.6" length="0.12" mass="${wrist_1_mass}">
         <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
@@ -435,14 +420,14 @@
       <child link = "${ur_prefix}_5_lowerwrist_limb" />
       <origin xyz="0.0 ${wrist_1_length} 0.0" rpy="0.0 0.0 0.0" />
       <axis xyz="0 0 1" />
-      <limit lower="${-2.0 * pi}" upper="${2.0 * pi}" effort="28.0" velocity="3.2"/>
+      <limit lower="${-2.0 * pi}" upper="${2.0 * pi}" effort="280.0" velocity="3.2"/>
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
 
     <link name="${ur_prefix}_5_lowerwrist_limb">
       <visual>
         <geometry>
-          <mesh filename="package://ur_description/meshes/ur/wrist2.stl" />
+          <mesh filename="package://ur_description/meshes/ur/wrist2.dae" />
         </geometry>
         <material name="LightGrey">
           <color rgba="0.7 0.7 0.7 1.0"/>
@@ -452,6 +437,11 @@
         <geometry>
           <mesh filename="package://ur_description/meshes/ur/wrist2.stl" />
         </geometry>
+              <surface>
+        <contact>
+          <collide_without_contact>true</collide_without_contact>
+        </contact>
+      </surface>
       </collision>
       <xacro:cylinder_inertial radius="0.6" length="0.12" mass="${wrist_2_mass}">
         <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
@@ -463,14 +453,14 @@
       <child link = "${ur_prefix}_6_hand_limb" />
       <origin xyz="0.0 0.0 ${wrist_2_length}" rpy="0.0 0.0 0.0" />
       <axis xyz="0 1 0" />
-      <limit lower="${-2.0 * pi}" upper="${2.0 * pi}" effort="28.0" velocity="3.2"/>
+      <limit lower="${-2.0 * pi}" upper="${2.0 * pi}" effort="280.0" velocity="3.2"/>
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
 
     <link name="${ur_prefix}_6_hand_limb">
       <visual>
         <geometry>
-          <mesh filename="package://ur_description/meshes/ur/wrist3.stl" />
+          <mesh filename="package://ur_description/meshes/ur/wrist3.dae" />
         </geometry>
         <material name="LightGrey">
           <color rgba="0.2 0.2 0.2 1.0"/>
@@ -480,6 +470,11 @@
         <geometry>
           <mesh filename="package://ur_description/meshes/ur/wrist3.stl" />
         </geometry>
+        <surface>
+        <contact>
+          <collide_without_contact>true</collide_without_contact>
+        </contact>
+        </surface>
       </collision>
       <xacro:cylinder_inertial radius="0.6" length="0.12" mass="${wrist_3_mass}">
         <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
@@ -527,12 +522,6 @@
     </joint>
 
     <link name="${ur_prefix}_ee_0_link">
-      <collision>
-        <geometry>
-          <box size="0.01 0.01 0.01"/>
-        </geometry>
-        <origin rpy="0 0 0" xyz="-0.01 0 0"/>
-      </collision>
       <xacro:cylinder_inertial radius="0.06" length="0.012" mass="${wrist_1_mass}">
         <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
       </xacro:cylinder_inertial>
@@ -547,12 +536,6 @@
     </joint>
 
     <link name="${ur_prefix}_ee_1_link">
-      <collision>
-        <geometry>
-          <box size="0.01 0.01 0.01"/>
-        </geometry>
-        <origin rpy="0 0 0" xyz="-0.01 0 0"/>
-      </collision>
       <xacro:cylinder_inertial radius="0.06" length="0.012" mass="${wrist_1_mass}">
         <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
       </xacro:cylinder_inertial>
@@ -567,12 +550,6 @@
     </joint>
 
     <link name="${ur_prefix}_ee_2_link">
-      <collision>
-        <geometry>
-          <box size="0.01 0.01 0.01"/>
-        </geometry>
-        <origin rpy="0 0 0" xyz="-0.01 0 0"/>
-      </collision>
       <xacro:cylinder_inertial radius="0.06" length="0.012" mass="${wrist_1_mass}">
         <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
       </xacro:cylinder_inertial>
@@ -624,4 +601,10 @@
     </joint>
 
   </xacro:macro>
+
+
+
+
+
+
 </root>
