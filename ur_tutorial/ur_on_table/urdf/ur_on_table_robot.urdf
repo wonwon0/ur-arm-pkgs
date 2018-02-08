@@ -717,7 +717,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://ur_description/meshes/ur2/6_hand_limb.STL" scale="1.0 1.0 1.0"/>
+        <mesh filename="package://ur_description/meshes/ur2/6_hand_limb.STL" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>

@@ -260,7 +260,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://ur_description/meshes/ur/base.stl"/>
+        <mesh filename="package://ur_description/meshes/ur/base.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -281,7 +281,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://ur_description/meshes/ur/base.stl" />
+        <mesh filename="package://ur_description/meshes/ur/base.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
 
@@ -298,7 +298,7 @@
       <child link = "${ur_prefix}_1_shoulder_limb" />
       <origin xyz="0.0 0.0 ${shoulder_height}" rpy="0.0 0.0 0.0" />
       <axis xyz="0 0 1" />
-      <limit lower="${-2.0 * pi}" upper="${2.0 * pi}" effort="1500.0" velocity="3.15"/>
+      <limit lower="${-20.0 * pi}" upper="${20.0 * pi}" effort="1500.0" velocity="3.15"/>
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
 
@@ -313,7 +313,7 @@
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://ur_description/meshes/ur/shoulder.stl" />
+          <mesh filename="package://ur_description/meshes/ur/shoulder.stl" scale="0.001 0.001 0.001"/>
         </geometry>
       </collision>
       <xacro:cylinder_inertial radius="0.06" length="0.15" mass="${shoulder_mass}">
@@ -326,7 +326,7 @@
       <child link = "${ur_prefix}_2_upperarm_limb" />
       <origin xyz="0.0 ${shoulder_offset} 0.0" rpy="0.0 ${pi / 2.0} 0.0" />
       <axis xyz="0 1 0" />
-      <limit lower="${-2.0 * pi}" upper="${2.0 * pi}" effort="1500.0" velocity="3.15"/>
+      <limit lower="${-20.0 * pi}" upper="${20.0 * pi}" effort="1500.0" velocity="3.15"/>
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
 
@@ -341,7 +341,7 @@
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://ur_description/meshes/ur/upperarm.stl" />
+          <mesh filename="package://ur_description/meshes/ur/upperarm.stl" scale="0.001 0.001 0.001"/>
         </geometry>
       </collision>
       <xacro:cylinder_inertial radius="0.06" length="0.56" mass="${upper_arm_mass}">
@@ -354,7 +354,7 @@
       <child link = "${ur_prefix}_3_forearm_limb" />
       <origin xyz="0.0 ${elbow_offset} ${upper_arm_length}" rpy="0.0 0.0 0.0" />
       <axis xyz="0 1 0" />
-      <limit lower="${-2.0 * pi}" upper="${2.0 * pi}" effort="150.0" velocity="3.15"/>
+      <limit lower="${-20.0 * pi}" upper="${20.0 * pi}" effort="150.0" velocity="3.15"/>
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
 
@@ -369,7 +369,7 @@
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://ur_description/meshes/ur/forearm.stl" />
+          <mesh filename="package://ur_description/meshes/ur/forearm.stl" scale="0.001 0.001 0.001"/>
         </geometry>
               <surface>
         <contact>
@@ -387,7 +387,7 @@
       <child link = "${ur_prefix}_4_upperwrist_limb" />
       <origin xyz="0.0 0.0 ${forearm_length}" rpy="0.0 ${pi / 2.0} 0.0" />
       <axis xyz="0 1 0" />
-      <limit lower="${-2.0 * pi}" upper="${2.0 * pi}" effort="280.0" velocity="3.2"/>
+      <limit lower="${-20.0 * pi}" upper="${20.0 * pi}" effort="280.0" velocity="3.2"/>
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
 
@@ -402,7 +402,7 @@
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://ur_description/meshes/ur/wrist1.stl" />
+          <mesh filename="package://ur_description/meshes/ur/wrist1.stl" scale="0.001 0.001 0.001"/>
         </geometry>
               <surface>
         <contact>
@@ -420,7 +420,7 @@
       <child link = "${ur_prefix}_5_lowerwrist_limb" />
       <origin xyz="0.0 ${wrist_1_length} 0.0" rpy="0.0 0.0 0.0" />
       <axis xyz="0 0 1" />
-      <limit lower="${-2.0 * pi}" upper="${2.0 * pi}" effort="280.0" velocity="3.2"/>
+      <limit lower="${-20.0 * pi}" upper="${20.0 * pi}" effort="280.0" velocity="3.2"/>
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
 
@@ -435,7 +435,7 @@
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://ur_description/meshes/ur/wrist2.stl" />
+          <mesh filename="package://ur_description/meshes/ur/wrist2.stl" scale="0.001 0.001 0.001"/>
         </geometry>
               <surface>
         <contact>
@@ -453,7 +453,7 @@
       <child link = "${ur_prefix}_6_hand_limb" />
       <origin xyz="0.0 0.0 ${wrist_2_length}" rpy="0.0 0.0 0.0" />
       <axis xyz="0 1 0" />
-      <limit lower="${-2.0 * pi}" upper="${2.0 * pi}" effort="280.0" velocity="3.2"/>
+      <limit lower="${-20.0 * pi}" upper="${20.0 * pi}" effort="280.0" velocity="3.2"/>
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
 
@@ -468,7 +468,7 @@
       </visual>
       <collision>
         <geometry>
-          <mesh filename="package://ur_description/meshes/ur/wrist3.stl" />
+          <mesh filename="package://ur_description/meshes/ur/wrist3.stl" scale="0.001 0.001 0.001"/>
         </geometry>
         <surface>
         <contact>
@@ -490,7 +490,7 @@
       <child link = "${ur_prefix}_ee_0_link" />
       <origin xyz="0.0 0.0 ${wrist_2_length}" rpy="0.0 0.0 0.0" />
       <axis xyz="0 1 0" />
-      <limit lower="${-2.0 * pi}" upper="${2.0 * pi}" effort="0.01" velocity="3.2"/>
+      <limit lower="${-20.0 * pi}" upper="${20.0 * pi}" effort="0.01" velocity="3.2"/>
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
 
@@ -499,7 +499,7 @@
       <child link = "${ur_prefix}_ee_1_link" />
       <origin xyz="0.0 0.0 ${wrist_2_length}" rpy="0.0 0.0 0.0" />
       <axis xyz="0 1 0" />
-      <limit lower="${-2.0 * pi}" upper="${2.0 * pi}" effort="0.01" velocity="3.2"/>
+      <limit lower="${-20.0 * pi}" upper="${20.0 * pi}" effort="0.01" velocity="3.2"/>
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
 
@@ -508,7 +508,7 @@
       <child link = "${ur_prefix}_ee_2_link" />
       <origin xyz="0.0 0.0 ${wrist_2_length}" rpy="0.0 0.0 0.0" />
       <axis xyz="0 1 0" />
-      <limit lower="${-2.0 * pi}" upper="${2.0 * pi}" effort="0.01" velocity="3.2"/>
+      <limit lower="${-20.0 * pi}" upper="${20.0 * pi}" effort="0.01" velocity="3.2"/>
       <dynamics damping="0.0" friction="0.0"/>
     </joint>
 

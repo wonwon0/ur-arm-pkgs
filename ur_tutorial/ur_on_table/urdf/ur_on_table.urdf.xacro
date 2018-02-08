@@ -27,7 +27,7 @@
 
 	<xacro:include filename="$(find ur_on_table)/urdf/objects/table.xacro" />
 	<joint name="table_to_arm" type="fixed">
-		<origin xyz="0.40488474042 0.27988474042 0.3" rpy="0 0 -0.785398163397458" />
+		<origin xyz="-0.397270 0.222882 0.3" rpy="0 0 -0.785398163397458" />
 		<parent link="robot_base"/>
 		<child link="table_base"/>
 	</joint>
@@ -36,7 +36,7 @@
     <xacro:arm_stand_link link_name="arm_stand"/>
 
 	<joint name="j2b" type="fixed">
-		<origin xyz="0 -0.035 0" rpy="-1.57079632679 -3.14159265358979 0" /> <!-- set the arm "inside" the table for now because of the rim along the real table. creating a bit of a buffer zone so moveit trajectories are within safe distance of the table edges. -->
+		<origin xyz="0 0 0" rpy="-1.57079632679 -3.14159265358979 -1.57079632679" /> <!-- set the arm "inside" the table for now because of the rim along the real table. creating a bit of a buffer zone so moveit trajectories are within safe distance of the table edges. -->
 		<parent link="tabletop_corner" />
 		<child link="arm_stand" />
 		<axis xyz="0 0 0" />
@@ -55,7 +55,7 @@
 <!-- Optional: Add the Xtion to the table to observe the real arm -->
     <xacro:if value="$(arg sensor_on_table)">
         <joint name="toxtion_base" type="fixed">
-            <origin xyz="0 -0.89 -0.01" rpy="0 0 -1.57079632679" /> 
+            <origin xyz="0 -0.89 -0.01" rpy="0 0 0" />
             <parent link="tabletop_corner" />
             <child link="xtion_base" />
         </joint>
