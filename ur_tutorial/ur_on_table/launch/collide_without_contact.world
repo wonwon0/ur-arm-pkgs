@@ -1,74 +1,31 @@
-<sdf version='1.4'>
-  <world name='default'>
+<sdf version="1.4">
+  <world name="default">
     <!-- include sun and ground plane -->
     <include><uri>model://sun</uri></include>
     <include><uri>model://ground_plane</uri></include>
-    <model name='contact_box'>
-      <pose>0.0 -1.0 1.5  0 0 0</pose>
+    <model name="gykujtyku">
+      <pose>0.0 0 0.89 0 0 3.1416</pose>
       <allow_auto_disable>false</allow_auto_disable>
-      <link name='link'>
-        <collision name='collision'>
+      <link name="link">
+        <visual name="visual">
           <geometry>
-            <box>
-              <size>1.0 1.0 1.0</size>
-            </box>
+            <mesh><uri>/home/phil/catkin_ws/src/matlab_stuff/UR5_matlab_simulator/stl_env_sim/hola3.stl</uri><scale>0.001 0.001 0.001</scale></mesh>
           </geometry>
-          <surface>
-            <contact>
-              <collide_without_contact>true</collide_without_contact>
-            </contact>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <box>
-              <size>1.0 1.0 1.0</size>
-            </box>
-          </geometry>
-          <material><script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Grey</name>
-          </script></material>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0 0 0 0</emissive>
+          </material>
         </visual>
       </link>
       <static>1</static>
     </model>
-    <model name='collide_box'>
-      <pose>0.0 1.0 1.5  0 0 0</pose>
-      <allow_auto_disable>false</allow_auto_disable>
-      <link name='link'>
-        <collision name='collision'>
-          <geometry>
-            <box>
-              <size>1.0 1.0 1.0</size>
-            </box>
-          </geometry>
-          <surface>
-            <contact>
-              <collide_without_contact>true</collide_without_contact>
-            </contact>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <box>
-              <size>1.0 1.0 1.0</size>
-            </box>
-          </geometry>
-          <material><script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Grey</name>
-          </script></material>
-        </visual>
-      </link>
-      <static>1</static>
-    </model>
-    <gui fullscreen='0'>
-      <camera name='user_camera'>
+    <gui fullscreen="0">
+      <camera name="user_camera">
         <pose>6.5 0.0 1.5  0.0 0.0 -3.14159</pose>
         <view_controller>orbit</view_controller>
       </camera>
     </gui>
   </world>
 </sdf>
-

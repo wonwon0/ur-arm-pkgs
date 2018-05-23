@@ -1,0 +1,34 @@
+'    <gui fullscreen="0">' n...
+'      <camera name="user_camera">' n...
+'        <pose>6.5 0.0 1.5  0.0 0.0 -3.14159</pose>' n...
+'        <view_controller>orbit</view_controller>' n...
+'      </camera>' n...
+'    </gui>' n...
+'  </world>' n...
+'</sdf>' n
+''
+''
+''
+''
+''
+''
+''
+''
+''
+''
+''
+''
+''
+''
+''
+''
+''
+''
+''
+''
+
+
+
+
+
+

@@ -123,6 +123,7 @@
 	<node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" 
         args="-param robot_description -urdf -x $(arg x) -y $(arg y) -z $(arg z) -model $(arg robot_name)"/>
 
+
   
 	###############################################
 	# Given the published joint states, publish tf for the robot links

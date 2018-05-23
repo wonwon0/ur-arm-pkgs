@@ -10,12 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e153f4b0-a6b6-4e44-8140-d13264de9631" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/ur_arm/ur_description/urdf/ur.urdf.xacro" afterPath="$PROJECT_DIR$/ur_arm/ur_description/urdf/ur.urdf.xacro" />
-      <change beforePath="$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table.urdf.xacro" afterPath="$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table.urdf.xacro" />
-      <change beforePath="$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table_robot.urdf" afterPath="$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table_robot.urdf" />
+      <change beforePath="$PROJECT_DIR$/ur_tutorial/ur_on_table/launch/collide_without_contact.world" afterPath="$PROJECT_DIR$/ur_tutorial/ur_on_table/launch/collide_without_contact.world" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,8 +57,8 @@
       <file leaf-file-name="ur_on_table.urdf.xacro" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table.urdf.xacro">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state relative-caret-position="774">
+              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -70,8 +67,8 @@
       <file leaf-file-name="ur.urdf.xacro" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ur_arm/ur_description/urdf/ur.urdf.xacro">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2013">
-              <caret line="470" column="98" lean-forward="false" selection-start-line="470" selection-start-column="98" selection-end-line="470" selection-end-column="98" />
+            <state relative-caret-position="416">
+              <caret line="381" column="32" lean-forward="false" selection-start-line="381" selection-start-column="32" selection-end-line="381" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -80,8 +77,8 @@
       <file leaf-file-name="ur_on_table_robot.urdf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table_robot.urdf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="687" column="29" lean-forward="true" selection-start-line="687" selection-start-column="29" selection-end-line="687" selection-end-column="29" />
+            <state relative-caret-position="12366">
+              <caret line="687" column="29" lean-forward="false" selection-start-line="687" selection-start-column="29" selection-end-line="687" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -90,8 +87,8 @@
       <file leaf-file-name="collide_without_contact.world" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/launch/collide_without_contact.world">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="972">
-              <caret line="54" column="38" lean-forward="false" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
+            <state relative-caret-position="432">
+              <caret line="24" column="38" lean-forward="false" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -122,10 +119,14 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>2.0 * pi</find>
+      <find>ur_ee</find>
     </findStrings>
     <replaceStrings>
       <replace>20.0 * pi</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -147,10 +148,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2301" />
+    <option name="x" value="549" />
     <option name="y" value="-4" />
-    <option name="width" value="927" />
-    <option name="height" value="1040" />
+    <option name="width" value="1867" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -173,70 +174,6 @@
             <path>
               <item name="ur-arm-pkgs" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="ur-arm-pkgs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ur-arm-pkgs" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="ur-arm-pkgs" type="462c0819:PsiDirectoryNode" />
-              <item name="ur_arm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ur-arm-pkgs" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="ur-arm-pkgs" type="462c0819:PsiDirectoryNode" />
-              <item name="ur_arm" type="462c0819:PsiDirectoryNode" />
-              <item name="ur_description" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ur-arm-pkgs" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="ur-arm-pkgs" type="462c0819:PsiDirectoryNode" />
-              <item name="ur_arm" type="462c0819:PsiDirectoryNode" />
-              <item name="ur_description" type="462c0819:PsiDirectoryNode" />
-              <item name="urdf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ur-arm-pkgs" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="ur-arm-pkgs" type="462c0819:PsiDirectoryNode" />
-              <item name="ur_arm" type="462c0819:PsiDirectoryNode" />
-              <item name="ur_gazebo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ur-arm-pkgs" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="ur-arm-pkgs" type="462c0819:PsiDirectoryNode" />
-              <item name="ur_arm" type="462c0819:PsiDirectoryNode" />
-              <item name="ur_gazebo" type="462c0819:PsiDirectoryNode" />
-              <item name="launch" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ur-arm-pkgs" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="ur-arm-pkgs" type="462c0819:PsiDirectoryNode" />
-              <item name="ur_tutorial" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ur-arm-pkgs" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="ur-arm-pkgs" type="462c0819:PsiDirectoryNode" />
-              <item name="ur_tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="ur_on_table" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ur-arm-pkgs" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="ur-arm-pkgs" type="462c0819:PsiDirectoryNode" />
-              <item name="ur_tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="ur_on_table" type="462c0819:PsiDirectoryNode" />
-              <item name="launch" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ur-arm-pkgs" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="ur-arm-pkgs" type="462c0819:PsiDirectoryNode" />
-              <item name="ur_tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="ur_on_table" type="462c0819:PsiDirectoryNode" />
-              <item name="urdf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ur-arm-pkgs" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="ur-arm-pkgs" type="462c0819:PsiDirectoryNode" />
-              <item name="ur_tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="ur_on_table" type="462c0819:PsiDirectoryNode" />
-              <item name="urdf" type="462c0819:PsiDirectoryNode" />
-              <item name="objects" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -275,34 +212,39 @@
       <option name="presentableId" value="Default" />
       <updated>1517927081722</updated>
       <workItem from="1517927082972" duration="6526000" />
-      <workItem from="1518114002672" duration="1761000" />
+      <workItem from="1518114002672" duration="2234000" />
+      <workItem from="1518447436868" duration="831000" />
+      <workItem from="1518450187059" duration="915000" />
+      <workItem from="1518722879829" duration="42000" />
+      <workItem from="1521573303463" duration="3000" />
+      <workItem from="1524231841963" duration="1000" />
+      <workItem from="1524236364846" duration="2000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8287000" />
+    <option name="totallyTimeSpent" value="10554000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1975" y="-4" width="1865" height="1084" extended-state="6" />
-    <editor active="true" />
+    <frame x="549" y="-4" width="1867" height="1092" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24986595" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3013405" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40388548" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -317,6 +259,230 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ur_arm/ur_description/urdf/ur.urdf.xacro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6858">
+          <caret line="381" column="32" lean-forward="false" selection-start-line="381" selection-start-column="32" selection-end-line="381" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/launch/ur_on_table_gazebo_controlled.launch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table_robot.urdf.xacro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table_robot_gazebo_ctrl.urdf.xacro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table.urdf.xacro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table_robot.urdf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12366">
+          <caret line="687" column="29" lean-forward="false" selection-start-line="687" selection-start-column="29" selection-end-line="687" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/launch/collide_without_contact.world">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="54" column="38" lean-forward="false" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/objects/arm_stand.xacro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/common_properties.urdf.xacro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_arm/ur_description/urdf/ur.urdf.xacro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6858">
+          <caret line="381" column="32" lean-forward="false" selection-start-line="381" selection-start-column="32" selection-end-line="381" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/launch/ur_on_table_gazebo_controlled.launch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table_robot.urdf.xacro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table_robot_gazebo_ctrl.urdf.xacro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table.urdf.xacro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table_robot.urdf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12366">
+          <caret line="687" column="29" lean-forward="false" selection-start-line="687" selection-start-column="29" selection-end-line="687" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/launch/collide_without_contact.world">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="54" column="38" lean-forward="false" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/objects/arm_stand.xacro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/common_properties.urdf.xacro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_arm/ur_description/urdf/ur.urdf.xacro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6480">
+          <caret line="360" column="24" lean-forward="true" selection-start-line="360" selection-start-column="24" selection-end-line="360" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/launch/ur_on_table_gazebo_controlled.launch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table_robot.urdf.xacro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table_robot_gazebo_ctrl.urdf.xacro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table.urdf.xacro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_arm/ur_description/urdf/ur.urdf.xacro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8460">
+          <caret line="470" column="98" lean-forward="false" selection-start-line="470" selection-start-column="98" selection-end-line="470" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table_robot.urdf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12366">
+          <caret line="687" column="29" lean-forward="true" selection-start-line="687" selection-start-column="29" selection-end-line="687" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/launch/collide_without_contact.world">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="54" column="38" lean-forward="false" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/objects/arm_stand.xacro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/common_properties.urdf.xacro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/launch/ur_on_table_gazebo_controlled.launch">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -353,7 +519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -452,8 +617,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/launch/collide_without_contact.world">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="54" column="38" lean-forward="false" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
+        <state relative-caret-position="432">
+          <caret line="24" column="38" lean-forward="false" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -462,7 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -476,24 +640,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table.urdf.xacro">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state relative-caret-position="774">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table_robot.urdf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="687" column="29" lean-forward="true" selection-start-line="687" selection-start-column="29" selection-end-line="687" selection-end-column="29" />
+        <state relative-caret-position="12366">
+          <caret line="687" column="29" lean-forward="false" selection-start-line="687" selection-start-column="29" selection-end-line="687" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ur_arm/ur_description/urdf/ur.urdf.xacro">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2013">
-          <caret line="470" column="98" lean-forward="false" selection-start-line="470" selection-start-column="98" selection-end-line="470" selection-end-column="98" />
+        <state relative-caret-position="416">
+          <caret line="381" column="32" lean-forward="false" selection-start-line="381" selection-start-column="32" selection-end-line="381" selection-end-column="32" />
           <folding />
         </state>
       </provider>
