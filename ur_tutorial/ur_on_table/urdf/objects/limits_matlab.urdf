@@ -1,0 +1,22 @@
+    <model>
+      <pose>0.0 0.7 0.5  0 0 0</pose>
+      <allow_auto_disable>false</allow_auto_disable>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <mesh filename="../../stl_env_sim/test_poly_0.stl" scale="0.001 0.001 0.001"/>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh filename="../../stl_env_sim/test_poly_0.stl" scale="0.001 0.001 0.001"/>
+          </geometry>
+        </visual>
+      </link>
+      <static>1</static>
+    </model>

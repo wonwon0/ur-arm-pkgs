@@ -16,7 +16,7 @@
     <arg name="y" default="0"/>
     <arg name="z" default="0"/>
     
-    <arg name="gazebo_world_file" default="/home/phil/catkin_ws/src/ur-arm-pkgs/ur_tutorial/ur_on_table/launch/collide_without_contact.world"/>
+    <arg name="gazebo_world_file" default="/home/phil/catkin_ws/src/matlab_stuff/UR5_matlab_simulator/matlab_gazebo_world_file.world"/>
 
     # set to true if the gazebo_state_plugin/gazebo_object_info world plugin should be loaded
     <arg name="load_gazebo_objects_plugin" default="true"/>
