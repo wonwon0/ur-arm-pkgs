@@ -490,7 +490,7 @@
     <link name="${ur_prefix}_adapter_link">
     <visual>
         <geometry>
-              <mesh filename="package://ur_description/meshes/ur/adapter.STL" scale="0.001 0.001 0.001"/>
+              <mesh filename="package://ur_description/meshes/ur/adapter.dae" scale="0.001 0.001 0.001"/>
         </geometry>
     </visual>
       <xacro:cylinder_inertial radius="0.06" length="0.012" mass="${wrist_1_mass}">
