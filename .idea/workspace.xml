@@ -11,8 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e153f4b0-a6b6-4e44-8140-d13264de9631" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ur_arm/ur_description/urdf/ur.urdf.xacro" afterPath="$PROJECT_DIR$/ur_arm/ur_description/urdf/ur.urdf.xacro" />
-      <change beforePath="$PROJECT_DIR$/ur_tutorial/ur_on_table/launch/collide_without_contact.world" afterPath="$PROJECT_DIR$/ur_tutorial/ur_on_table/launch/collide_without_contact.world" />
+      <change beforePath="$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table_robot.urdf" afterPath="$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table_robot.urdf" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,18 +23,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ur_on_table_gazebo_controlled.launch" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/launch/ur_on_table_gazebo_controlled.launch">
+      <file leaf-file-name="UrControl.yaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ur_arm/ur_gazebo/config/UrControl.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+            <state relative-caret-position="801">
+              <caret line="67" column="25" lean-forward="true" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ur_on_table_robot.urdf.xacro" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table_robot.urdf.xacro">
+      <file leaf-file-name="UrControlLocalImpl.yaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ur_arm/ur_gazebo/config/UrControlLocalImpl.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-477">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ur_control.launch" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ur_arm/ur_gazebo/launch/ur_control.launch">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="38" column="44" lean-forward="false" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UrJoints.yaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ur_arm/ur_joints/config/UrJoints.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UrJointManager.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ur_arm/ur_joints/include/ur_joints/UrJointManager.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -44,8 +73,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ur_on_table_robot_gazebo_ctrl.urdf.xacro" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table_robot_gazebo_ctrl.urdf.xacro">
+      <file leaf-file-name="init_ur_joints.launch" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ur_arm/ur_joints/launch/init_ur_joints.launch">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -54,58 +83,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ur_on_table.urdf.xacro" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table.urdf.xacro">
+      <file leaf-file-name="UrJointManager.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ur_arm/ur_joints/src/UrJointManager.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="774">
-              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state relative-caret-position="324">
+              <caret line="108" column="29" lean-forward="true" selection-start-line="108" selection-start-column="29" selection-end-line="108" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ur.urdf.xacro" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ur_arm/ur_description/urdf/ur.urdf.xacro">
+      <file leaf-file-name="gzplugin_joint_control.urdf.xacro" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ur_arm/ur_gazebo/urdf/gzplugin_joint_control.urdf.xacro">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="381" column="32" lean-forward="false" selection-start-line="381" selection-start-column="32" selection-end-line="381" selection-end-column="32" />
+            <state relative-caret-position="-56">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ur_on_table_robot.urdf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table_robot.urdf">
+      <file leaf-file-name="gzplugin_grasp_fix.urdf.xacro" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ur_arm/ur_gazebo/urdf/gzplugin_grasp_fix.urdf.xacro">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12366">
-              <caret line="687" column="29" lean-forward="false" selection-start-line="687" selection-start-column="29" selection-end-line="687" selection-end-column="29" />
+            <state relative-caret-position="-20">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="collide_without_contact.world" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/launch/collide_without_contact.world">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="24" column="38" lean-forward="false" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="arm_stand.xacro" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/objects/arm_stand.xacro">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common_properties.urdf.xacro" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/common_properties.urdf.xacro">
+      <file leaf-file-name="gzplugin_ros_control.urdf.xacro" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ur_arm/ur_gazebo/urdf/gzplugin_ros_control.urdf.xacro">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -120,6 +129,7 @@
     <findStrings>
       <find>2.0 * pi</find>
       <find>ur_ee</find>
+      <find>limit</find>
     </findStrings>
     <replaceStrings>
       <replace>20.0 * pi</replace>
@@ -138,6 +148,7 @@
         <option value="$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table_robot.urdf" />
         <option value="$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table.urdf.xacro" />
         <option value="$PROJECT_DIR$/ur_arm/ur_description/urdf/ur.urdf.xacro" />
+        <option value="$PROJECT_DIR$/ur_arm/ur_joints/config/UrJoints.yaml" />
       </list>
     </option>
   </component>
@@ -148,8 +159,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="549" />
-    <option name="y" value="-4" />
+    <option name="x" value="54" />
+    <option name="y" value="-11" />
     <option name="width" value="1867" />
     <option name="height" value="1092" />
   </component>
@@ -174,6 +185,99 @@
             <path>
               <item name="ur-arm-pkgs" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="ur-arm-pkgs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ur-arm-pkgs" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="ur-arm-pkgs" type="462c0819:PsiDirectoryNode" />
+              <item name="ur_arm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ur-arm-pkgs" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="ur-arm-pkgs" type="462c0819:PsiDirectoryNode" />
+              <item name="ur_arm" type="462c0819:PsiDirectoryNode" />
+              <item name="ur_arm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ur-arm-pkgs" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="ur-arm-pkgs" type="462c0819:PsiDirectoryNode" />
+              <item name="ur_arm" type="462c0819:PsiDirectoryNode" />
+              <item name="ur_description" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ur-arm-pkgs" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="ur-arm-pkgs" type="462c0819:PsiDirectoryNode" />
+              <item name="ur_arm" type="462c0819:PsiDirectoryNode" />
+              <item name="ur_description" type="462c0819:PsiDirectoryNode" />
+              <item name="launch" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ur-arm-pkgs" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="ur-arm-pkgs" type="462c0819:PsiDirectoryNode" />
+              <item name="ur_arm" type="462c0819:PsiDirectoryNode" />
+              <item name="ur_gazebo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ur-arm-pkgs" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="ur-arm-pkgs" type="462c0819:PsiDirectoryNode" />
+              <item name="ur_arm" type="462c0819:PsiDirectoryNode" />
+              <item name="ur_gazebo" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ur-arm-pkgs" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="ur-arm-pkgs" type="462c0819:PsiDirectoryNode" />
+              <item name="ur_arm" type="462c0819:PsiDirectoryNode" />
+              <item name="ur_gazebo" type="462c0819:PsiDirectoryNode" />
+              <item name="launch" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ur-arm-pkgs" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="ur-arm-pkgs" type="462c0819:PsiDirectoryNode" />
+              <item name="ur_arm" type="462c0819:PsiDirectoryNode" />
+              <item name="ur_gazebo" type="462c0819:PsiDirectoryNode" />
+              <item name="urdf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ur-arm-pkgs" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="ur-arm-pkgs" type="462c0819:PsiDirectoryNode" />
+              <item name="ur_arm" type="462c0819:PsiDirectoryNode" />
+              <item name="ur_joints" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ur-arm-pkgs" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="ur-arm-pkgs" type="462c0819:PsiDirectoryNode" />
+              <item name="ur_arm" type="462c0819:PsiDirectoryNode" />
+              <item name="ur_joints" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ur-arm-pkgs" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="ur-arm-pkgs" type="462c0819:PsiDirectoryNode" />
+              <item name="ur_arm" type="462c0819:PsiDirectoryNode" />
+              <item name="ur_joints" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ur-arm-pkgs" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="ur-arm-pkgs" type="462c0819:PsiDirectoryNode" />
+              <item name="ur_arm" type="462c0819:PsiDirectoryNode" />
+              <item name="ur_joints" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="ur_joints" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ur-arm-pkgs" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="ur-arm-pkgs" type="462c0819:PsiDirectoryNode" />
+              <item name="ur_arm" type="462c0819:PsiDirectoryNode" />
+              <item name="ur_joints" type="462c0819:PsiDirectoryNode" />
+              <item name="launch" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ur-arm-pkgs" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="ur-arm-pkgs" type="462c0819:PsiDirectoryNode" />
+              <item name="ur_arm" type="462c0819:PsiDirectoryNode" />
+              <item name="ur_joints" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -219,20 +323,25 @@
       <workItem from="1521573303463" duration="3000" />
       <workItem from="1524231841963" duration="1000" />
       <workItem from="1524236364846" duration="2000" />
+      <workItem from="1530018868640" duration="170000" />
+      <workItem from="1530019446814" duration="657000" />
+      <workItem from="1530033545328" duration="1574000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10554000" />
+    <option name="totallyTimeSpent" value="12955000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="549" y="-4" width="1867" height="1092" extended-state="6" />
+    <frame x="54" y="-11" width="1867" height="1092" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3013405" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40388548" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2198364" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -244,7 +353,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -259,30 +367,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ur_arm/ur_description/urdf/ur.urdf.xacro">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6858">
-          <caret line="381" column="32" lean-forward="false" selection-start-line="381" selection-start-column="32" selection-end-line="381" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/launch/ur_on_table_gazebo_controlled.launch">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table_robot.urdf.xacro">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table_robot_gazebo_ctrl.urdf.xacro">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -319,7 +403,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -327,79 +410,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ur_arm/ur_description/urdf/ur.urdf.xacro">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6858">
-          <caret line="381" column="32" lean-forward="false" selection-start-line="381" selection-start-column="32" selection-end-line="381" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/launch/ur_on_table_gazebo_controlled.launch">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table_robot.urdf.xacro">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table_robot_gazebo_ctrl.urdf.xacro">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table.urdf.xacro">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/ur_on_table_robot.urdf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12366">
-          <caret line="687" column="29" lean-forward="false" selection-start-line="687" selection-start-column="29" selection-end-line="687" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/launch/collide_without_contact.world">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="54" column="38" lean-forward="false" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/objects/arm_stand.xacro">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/common_properties.urdf.xacro">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -415,7 +425,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -423,7 +432,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -471,7 +479,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -479,7 +486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -487,7 +493,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -495,7 +500,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -542,7 +546,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -550,7 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -569,13 +571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ur_arm/ur_description/launch/ur_gazebo.launch">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2373">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/urdf/objects/table.xacro">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-360">
@@ -587,7 +582,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -595,7 +589,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -603,7 +596,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -611,14 +603,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ur_tutorial/ur_on_table/launch/collide_without_contact.world">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
-          <caret line="24" column="38" lean-forward="false" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+          <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -656,8 +647,112 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ur_arm/ur_description/urdf/ur.urdf.xacro">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="381" column="32" lean-forward="false" selection-start-line="381" selection-start-column="32" selection-end-line="381" selection-end-column="32" />
+        <state relative-caret-position="5310">
+          <caret line="295" column="40" lean-forward="false" selection-start-line="295" selection-start-column="40" selection-end-line="295" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_arm/ur_gazebo/config/UrControlLocalImpl.SetVelocity.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_arm/ur_description/launch/ur_gazebo.launch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-664">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_arm/ur_gazebo/config/JointTrajectoryParams.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-81">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_arm/ur_gazebo/config/UrControl.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="801">
+          <caret line="67" column="25" lean-forward="true" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_arm/ur_gazebo/config/UrControlLocalImpl.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-477">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_arm/ur_gazebo/launch/ur_control.launch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="38" column="44" lean-forward="false" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_arm/ur_gazebo/urdf/gzplugin_ros_control.urdf.xacro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_arm/ur_gazebo/urdf/gzplugin_joint_control.urdf.xacro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-56">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_arm/ur_gazebo/urdf/gzplugin_grasp_fix.urdf.xacro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-20">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_arm/ur_joints/config/UrJoints.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_arm/ur_joints/include/ur_joints/UrJointManager.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_arm/ur_joints/launch/init_ur_joints.launch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ur_arm/ur_joints/src/UrJointManager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="108" column="29" lean-forward="true" selection-start-line="108" selection-start-column="29" selection-end-line="108" selection-end-column="29" />
           <folding />
         </state>
       </provider>
